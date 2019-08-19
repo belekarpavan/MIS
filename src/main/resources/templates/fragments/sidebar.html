@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment=head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/fonts/fontawesome-webfont.woff2">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1em;
+            font-weight: 300;
+            line-height: 1.7em;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper" th:fragment="sidebar">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="bg-dark">
+            <div class="sidebar-header">
+                <h3 class="text-center"><img alt="profile_image" src="/images/student.png" class="img-fluid rounded-circle w-50 "></h3>
+                <p class="text-center">Pavan Belhekar</p>
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li class="nav-item">
+                    <a class="nav-link pl-4" href="dashboard"> <i class="fa fa-tachometer pr-2" aria-hidden="true"></i> <span>Dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4" href="profile"><i class="fa fa-user-secret pr-2" aria-hidden="true"></i> <span>Profile</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4" href="#"> <i class="fa fa-graduation-cap pr-2" aria-hidden="true"></i><span>My Applied Course</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4" href="#"> <i class="fa fa-calendar pr-2" aria-hidden="true"></i><span> Class Time Table</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4" href="#"> <i class="fa fa-calendar-check-o pr-2" aria-hidden="true"></i> <span>Attendance</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-4" href="#"> <i class="fa fa-calendar-check-o pr-2" aria-hidden="true"></i> <span>Fees Status</span></a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content Holder -->
+
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark navbar-btn">
+                           <i class="fa fa-bars text-white" aria-hidden="true"></i>
+                        </button>
+                </div>
+            </nav>
+        </div>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#sidebarCollapse').on('click', function() {
+                    $('#sidebar').toggle();
+                });
+            });
+        </script>
+</body>
+
+</body>
+
+</html>

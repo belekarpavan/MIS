@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome</title>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <Style>
+            body {
+            	font-family: 'Poppins', sans-serif;
+	            font-size: 1.1em;
+	            font-weight: 300;
+	            line-height: 1.7em;
+	            color: #999;
+                background-image: url("/images/bg/bg2.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            a:hover{
+            	text-decoration:none;
+            }
+        </Style>
+    </head>
+
+    <body>        
+            <div class="container mt-5">
+                <div class="row mt-5 ml-5">
+
+                    <div class="col-sm-3 col-md-3 col-lg-3 mt-5">
+                        <a href="admin">
+                            <div class="card ">
+                                <div class="card-body text-center">
+                                    <img src="/images/admin1.jpg" class="img-fluid rounded w-75" />
+                                    <h6 class="mt-3 text-center">Admin Login</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 mt-5">
+                        <a href="teacher">
+                            <div class="card ">
+                                <div class="card-body text-center">
+                                    <img src="/images/teacher1.png" class="img-fluid rounded w-75" />
+                                    <h6 class="mt-3 text-center">Teacher Login</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 mt-5">
+                        <a href="student">
+                            <div class="card ">
+                                <div class="card-body text-center">
+                                    <img src="/images/student1.png" class="img-fluid rounded w-75" />
+                                    <h6 class="mt-3 text-center">Student Login</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </body>
+
+</html>

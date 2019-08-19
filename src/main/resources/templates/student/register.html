@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head th:replace="fragments/sidebar :: head">
+    </head>
+
+</head>
+
+<body>
+
+    <div class="container-fluid ml-5 mt-5">
+
+        <form class="text-dark" action="RegisterServlet" method="POST" autocomplete="off">
+            <span class="text-gray-dark">
+				We are excited to have you join us. Before you get started, we need to know a few things about you.
+			</span>
+            <div class="card-img card-blockquote">
+                <img class="img-thumbnail" src="/images/student-logo.png" alt="scr_files/student.png">
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <input type="text" name="firstName" id="name" class=" form-control border-left-0 border-right-0 border-top-0" placeholder="First Name :" required="Required" />
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <input type="text" name="middleName" id="middleName" class=" form-control border-left-0 border-right-0 border-top-0" placeholder="Middle Name :" />
+                    </div>
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <input type="text" name="lastName" id="lastName" class="form-control  border-left-0 border-right-0 border-top-0" placeholder="Last Name :" required="required">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class=" form-control validate border-left-0 border-right-0 border-top-0" placeholder="Email:" required="Required" />
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <input type="password" name="password" id="password" class="form-control  border-left-0 border-right-0 border-top-0" placeholder="Password:" required="required" />
+                        <p class="d-inline-block small">Your password must contain at least 8 characters. It must also include at least 1 lowercase (abc), 1 uppercase (ABC), and 1 number (123).</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <input type="password" name="password" id="password" class="form-control  border-left-0 border-right-0 border-top-0" placeholder="Confirm Password:" required="required" />
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <span>Country :</span>
+                        <select class="form-control  border-left-0 border-right-0 border-top-0" name="country" id="country">
+							<option> INDIA </option>							
+						</select>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <span>State :</span>
+                        <select class="form-control  border-left-0 border-right-0 border-top-0" name="state" id="state">
+							<option> Select One </option>							
+							<option>Maharashtra</option>							
+						</select>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <span>Gender :</span>
+                        <select class="form-control  border-left-0 border-right-0 border-top-0" name="gender" id="gender">
+							<option> Select One </option>
+							<option> Male </option>
+							<option> Female </option>
+						</select>
+                    </div>
+
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <span>Date of birth :</span>
+                        <input type="date" name="dob" id="dob" class="form-control  border-left-0 border-right-0 border-top-0" placeholder="DD/MM/YYYY">
+                    </div>
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <span>AADHAR NO. is used to help confirm your identity.</span>
+                        <input type="test" name="aadhar" id="aadhar" class="form-control  border-left-0 border-right-0 border-top-0" placeholder="AADHAR NO">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row text-info">
+                <div class="col">
+                    <label>
+					By clicking Create Account.</label>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <input type="submit" name="signup" value="register" class=" btn btn-round btn-warning form-control badge-success">
+
+                </div>
+            </div>
+            <span class="login-box-options">
+  Already an Account?  <a href="/student" style="margin-left:30px;">Login Here</a>
+</span>
+        </form>
+        <br><br>
+    </div>
+
+
+
+
+</html>
