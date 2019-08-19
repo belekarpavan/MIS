@@ -146,3 +146,16 @@ span.round-tab:hover {
         left: 35%;
     }
 }
+
+
+
+
+.badge-up{
+		position: relative;
+	    top: -13px;
+	    right: 14px;
+	}
+
+	.rounded-25{
+		border-radius: 25px;
+	}

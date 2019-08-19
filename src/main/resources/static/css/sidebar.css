@@ -46,6 +46,7 @@ span {
     max-width: 250px;
     color: #fff;
     transition: all 0.3s;
+    min-height: 100vh;
 }
 
 #sidebar.active {
@@ -72,7 +73,6 @@ span {
     text-align: center;
     font-size: 0.85em;
 }
-
 
 #sidebar.active ul li a i {
     margin-right: 0;
@@ -111,7 +111,7 @@ span {
 }
 
 #sidebar ul li a {
-    padding: 10px;    
+    padding: 10px;
     color: #ffffffc9;
     display: block;
 }
@@ -124,12 +124,6 @@ span {
 
 #sidebar ul li a i {
     margin-right: 10px;
-}
-
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: #0097A7;
 }
 
 a[data-toggle="collapse"] {
@@ -261,4 +255,10 @@ a.article:hover {
     margin-top: 10px;
     margin-left: 21px;
     width: 100%;
+}
+
+.badge-up {
+    position: relative;
+    top: -13px;
+    right: 14px;
 }

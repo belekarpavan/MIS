@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head th:replace="fragments/sidebar :: head">
 
-</head>
-<body >
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
 
-<div th:replace="fragments/sidebar :: sidebar">	
-</div>
-<p>Welcome to dashboard </p>
+</head>
+
+<body>
+
+    <div th:replace="fragments/sidebar :: sidebar"> </div>
+    <div class="container-fluid pl-0">
+        <div th:replace="fragments/topnavbar :: topnavbar"> </div>
+        <p>Welcome to dashboard </p>
+    </div>
 </body>
+
 </html>
