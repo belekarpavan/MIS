@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/adminSidebar :: head">
 
 <head th:replace="fragments/cssimport :: head">
 
@@ -8,6 +9,12 @@
 <<<<<<< HEAD
 <body>     
     <p>Welcome to dashboard </p>
+
+<div th:replace="fragments/adminSidebar :: sidebar"> </div>
+    <div class="container-fluid pl-0">
+        <div th:replace="fragments/topnavbar :: topnavbar"> </div>
+        <p>Welcome to dashboard </p>
+    </div>
 </body>
 
 </html>

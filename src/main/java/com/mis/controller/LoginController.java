@@ -32,7 +32,7 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="student/dashboard",method=RequestMethod.GET)
-	public String studentDashboardPage() {
+	public String StudentDashboardPage() {
 		return "student/dashboard";
 	}
 	
