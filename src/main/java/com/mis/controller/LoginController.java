@@ -32,7 +32,12 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="student/dashboard",method=RequestMethod.GET)
-	public String dashboardPage() {
+	public String studentDashboardPage() {
 		return "student/dashboard";
+	}
+	
+	@RequestMapping(value="admin/dashboard",method=RequestMethod.GET)
+	public String adminDashboardPage() {
+		return "admin/dashboard";
 	}
 }
